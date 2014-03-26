@@ -1,12 +1,42 @@
-\documentclass[a4paper]{article}
+%\documentclass[a4paper]{article}
+\documentclass[a4paper,fleqn]{article}
+
 
 \usepackage[utf8]{inputenc} % für input utf8
 \usepackage[T1]{fontenc} %Schriftcodierung mit UTF-8
 \usepackage[ngerman]{babel}
+\usepackage{graphics}
 
+
+\title{Testdokument}
+\author{nmzz}
 \begin{document}
 
-\section{Hallo Welt}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
 
+\section{Hallo Welt}
+\textit{Dieser Text ist Kursiv}\\
+\textbf{Dieser Text ist Fett}\\
+\emph{Dieser Text ist Hervorgehoben}\\
+%
+Hier beginnt ein neuer Absatz\\
+Die Formel von Einstelin lautet $e = m \cdot c^2$.
+
+\[a^2 + b^2 = c^2\]
+\[\sqrt{a^2 + b^2} = c\]
+\[R = \frac{U}{I}\]
+Siehe Abbildung \ref{tux}. 
+
+
+\begin{figure}[h!]
+\includegraphics{Tux.png}
+\label{tux}
+\caption{Linux Maskotchen}
+\end{figure}
+
+\listoffigures
 
 \end{document}
